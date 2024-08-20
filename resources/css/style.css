@@ -1,0 +1,130 @@
+body{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.title{
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+header {
+  position: relative;
+  background-color: black;
+  height: 83vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0px 8px 20px;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  
+  header video {
+    display: none;
+  }
+}
+
+.nav-link{
+  white-space: nowrap;
+  margin: 0px 10px;
+}
+
+.logo_nav{
+  width: 250px;
+}
+
+.img_pills1{
+  width: 250px;
+}
+
+.img_pills2{
+  width: 200px;
+}
+
+.img_pills3{
+  width: 300px;
+}
+
+.btn-mig{
+  background-color: #4DAAE9;
+  width: 200px;
+}
+
+.citazione{
+  margin-top: 150px;
+  margin-bottom: 150px;
+  font-style: italic;
+  padding: 0px 100px;
+}
+
+.bordo{
+  border-bottom: 4px solid #4DAAE9;
+  width: 350px;
+}
+
+.bordo2{
+  border-bottom: 4px solid #4DAAE9;
+  width: 400px;
+}
+
+.feature{
+  height: 500px;
+}
+
+.accordion{
+  width: 80%;
+}
+
+.linkedin{
+  color: #2D63BC;
+}
+
+.facebook{
+  color: #2B63F6;
+}
+
+.sez_accordion{
+  width: 60%;
+}
+
+.sez_xk{
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
