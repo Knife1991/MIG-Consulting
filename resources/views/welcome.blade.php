@@ -77,32 +77,32 @@
                     <div class="d-block mx-auto accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                    Focus sul Cliente
+                                <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    <span class="me-4 fs-2">🎯</span> Focus sul Cliente
                                 </button>
                             </h2>
                             <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">La nostra priorità è il successo dei nostri clienti. Lavoriamo a stretto contatto con te, ascoltando le tue esigenze e fornendo supporto continuo per assicurarti di raggiungere i tuoi obiettivi aziendali.</div>
+                                <div class="accordion-body fs-5">La nostra priorità è il successo dei nostri clienti. Lavoriamo a stretto contatto con te, ascoltando le tue esigenze e fornendo supporto continuo per assicurarti di raggiungere i tuoi obiettivi aziendali.</div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                    Approccio Personalizzato
+                                <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    <span class="me-4 fs-2">⚙️</span> Approccio Personalizzato
                                 </button>
                             </h2>
                             <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Ogni azienda è unica, e lo sono anche le sue esigenze. Offriamo soluzioni su misura che si adattano perfettamente agli obiettivi e alle sfide specifiche del tuo business, assicurandoci che ogni passo verso il successo sia strategicamente pianificato e implementato.</div>
+                                <div class="accordion-body fs-5">Ogni azienda è unica, e lo sono anche le sue esigenze. Offriamo soluzioni su misura che si adattano perfettamente agli obiettivi e alle sfide specifiche del tuo business, assicurandoci che ogni passo verso il successo sia strategicamente pianificato e implementato.</div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                    Risultati Tangibili
+                                <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    <span class="me-4 fs-2">🏅</span> Risultati Tangibili
                                 </button>
                             </h2>
                             <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Non ci limitiamo a consulenze teoriche. Il nostro approccio pratico e orientato ai risultati ha portato a un aumento delle performance aziendali e a una crescita significativa per i nostri clienti.</div>
+                                <div class="accordion-body fs-5">Non ci limitiamo a consulenze teoriche. Il nostro approccio pratico e orientato ai risultati ha portato a un aumento delle performance aziendali e a una crescita significativa per i nostri clienti.</div>
                             </div>
                         </div>
                     </div>

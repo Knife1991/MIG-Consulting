@@ -13,7 +13,7 @@ body{
 header {
   position: relative;
   background-color: black;
-  height: 83vh;
+  height: 100vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -127,4 +127,39 @@ header .overlay {
 .sez_xk{
   margin-top: 150px;
   margin-bottom: 150px;
+}
+
+.accordion-button{
+  padding: 30px 20px;
+  border-radius: 25px !important;
+}
+
+.accordion-button:not(.collapsed){
+  background-color: white;
+  box-shadow: 2px 2px 8px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .logo_nav{
+    width: 200px;
+  }
+
+  .bordo {
+    border-bottom: 4px solid #4DAAE9;
+    width: 65%; 
+  }
+
+  .bordo2 {
+    border-bottom: 4px solid #4DAAE9;
+    width: 80%;
+  }
+
+  .accordion {
+    width: 100%; 
+    max-width: 100%; 
+  }
+
+  .sez_accordion{
+    width: 90%;
+  }
 }
