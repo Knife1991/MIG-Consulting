@@ -18,6 +18,10 @@ class PublicController extends Controller
         return view('formazioneOperativa/formazioneOperativa');
     }
 
+    public function analisiProcessi() {
+        return view('formazioneOperativa/analisiprocessi');
+    }
+
     public function formazioneRuolo() {
         return view('formazioneRuolo/formazioneRuolo');
     }

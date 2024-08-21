@@ -9,7 +9,7 @@
                 <div class="col-12 col-md-8 d-flex align-items-center">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item d-flex d-md-block justify-content-center justify-content-md-start">
-                            <a class="link_formazione text-decoration-none text-center text-black fs-4" href="">Analisi e ottimizzazione processi produttivi.</a>
+                            <a class="link_formazione text-decoration-none text-center text-black fs-4" href="{{route('analisiProcessi')}}">Analisi e ottimizzazione processi produttivi.</a>
                         </li>
                     </ul>
                 </div>
@@ -57,7 +57,7 @@
                 <div class="col-12 col-md-8 d-flex align-items-center">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item d-flex d-md-block justify-content-center justify-content-md-start">
-                            <a class="link_formazione text-decoration-none text-center text-black fs-4" href="">Metodologia Lean Six Sigma.</a>
+                            <a class="link_formazione text-decoration-none text-center text-black fs-4" href="">Introduzione alla metodologia Lean Six Sigma.</a>
                         </li>
                     </ul>
                 </div>

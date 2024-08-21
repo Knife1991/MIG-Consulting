@@ -39,7 +39,7 @@
                     <h2 class="fw-normal fs-1 text-center title bordo d-block mx-auto">I NOSTRI SERVIZI</h2>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <div class="feature p-5 d-flex flex-column justify-content-between shadow">
+                    <div class="feature p-5 d-flex flex-column justify-content-between shadow rounded">
                         <img src="{{Storage::url('public/img/formazioneOperativa.png')}}" class="img_pills1 rounded-circle d-block mx-auto" alt="">
                         <h2 class="fw-normal text-center title">Formazione Operativa</h2>
                         <p class="text-center">Formazione su competenze pratiche per migliorare l’efficienza e la produttività dei tuoi processi.</p>
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <div class="feature p-5 d-flex flex-column justify-content-between shadow">
+                    <div class="feature p-5 d-flex flex-column justify-content-between shadow rounded">
                         <img src="{{Storage::url('public/img/formazioneDiRuolo.png')}}" class="img_pills2 rounded-circle d-block mx-auto" alt="">
                         <h2 class="fw-normal text-center title">Formazione di Ruolo</h2>
                         <p class="text-center">Potenzia le abilità del personale con una formazione su misura per ogni ruolo aziendale.</p>
@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <div class="feature p-5 d-flex flex-column justify-content-between shadow">
+                    <div class="feature p-5 d-flex flex-column justify-content-between shadow rounded">
                         <img src="{{Storage::url('public/img/consulenzaAziendale.png')}}" class="img_pills3 rounded-circle d-block mx-auto" alt="">
                         <h2 class="fw-normal text-center title">Consulenza Aziendale</h2>
                         <p class="text-center">Miglioramento dei processi aziendali, ottimizzazione delle operazioni e implementazione di nuove tecnologie.</p>

@@ -170,6 +170,11 @@ header .overlay {
     width: 200px;
   }
 
+  .nav-link:hover{
+    color: #4DAAE9 !important;
+    transform: scale(1);
+  }
+
   .bordo {
     border-bottom: 4px solid #4DAAE9;
     width: 65%; 
@@ -234,6 +239,16 @@ header .overlay {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 50px;
+}
+
+.sez_corso2{
+  background-color: #4DAAE9;
+  color: white;
+  width: 80%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  margin-top: 30px;
 }
 
 .link_formazione{
