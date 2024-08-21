@@ -6,7 +6,7 @@
         <img class="logo_nav" src="{{Storage::url('public/img/Logonav.png')}}" alt="Logo aziendale">
       </a>
       <p class="text-body-secondary">P.IVA: 04516050715</p>
-      <p class="text-body-secondary">Powered by <br> Merola Giuseppe - Web Developer © 2024</p>
+      <p class="text-body-secondary powered">Powered by <br> Merola Giuseppe - Web Developer <br> © 2024</p>
     </div>
 
     <!-- Spazio vuoto per mantenere la struttura -->

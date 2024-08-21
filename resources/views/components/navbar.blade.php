@@ -24,11 +24,12 @@
                 Formazione
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Formazione Operativa</a></li>
-                <li>
-                  <hr class="dropdown-divider">
+                <li class="mb-2">
+                  <a class="dropdown-item" href="{{route('formazioneOperativa')}}">Formazione Operativa</a>
                 </li>
-                <li><a class="dropdown-item" href="#">Formazione di Ruolo</a></li>
+                <li>
+                  <a class="dropdown-item" href="{{route('formazioneRuolo')}}">Formazione di Ruolo</a>
+                </li>
               </ul>
             </li>
             <li class="nav-item">

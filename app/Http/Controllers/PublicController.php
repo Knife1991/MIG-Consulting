@@ -13,4 +13,12 @@ class PublicController extends Controller
     public function chiSiamo() {
         return view('chisiamo');
     }
+
+    public function formazioneOperativa() {
+        return view('formazioneOperativa/formazioneOperativa');
+    }
+
+    public function formazioneRuolo() {
+        return view('formazioneRuolo/formazioneRuolo');
+    }
 }

@@ -12,8 +12,8 @@
             <div class="container h-100">
                 <div class="d-flex h-100 text-center align-items-center">
                     <div class="w-100 text-white">
-                        <h1 class="display-3 fw-bold">Guidiamo la tua azienda verso il successo</h1>
-                        <p class="lead mb-0 fs-4">Soluzioni strategiche su misura per valorizzare e ottimizzare il tuo successo aziendale</p>
+                        <h1 class="display-3 fw-bold">Esperienza e competenza <br> al tuo servizio</h1>
+                        <p class="lead mb-0 fs-4">Siamo il tuo partner strategico per crescere ed innovare</p>
                     </div>
                 </div>
             </div>
@@ -42,24 +42,24 @@
                     <div class="feature p-5 d-flex flex-column justify-content-between shadow">
                         <img src="{{Storage::url('public/img/formazioneOperativa.png')}}" class="img_pills1 rounded-circle d-block mx-auto" alt="">
                         <h2 class="fw-normal text-center title">Formazione Operativa</h2>
-                        <p class="text-center">Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-                        <p><a class="btn btn-mig d-block mx-auto text-white" href="#">View details »</a></p>
+                        <p class="text-center">Formazione su competenze pratiche per migliorare l’efficienza e la produttività dei tuoi processi.</p>
+                        <p><a class="btn btn-mig d-block mx-auto text-white" href="{{route('formazioneOperativa')}}">Scopri di piú</a></p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
                     <div class="feature p-5 d-flex flex-column justify-content-between shadow">
                         <img src="{{Storage::url('public/img/formazioneDiRuolo.png')}}" class="img_pills2 rounded-circle d-block mx-auto" alt="">
                         <h2 class="fw-normal text-center title">Formazione di Ruolo</h2>
-                        <p class="text-center">Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-                        <p><a class="btn btn-mig d-block mx-auto text-white" href="#">View details »</a></p>
+                        <p class="text-center">Potenzia le abilità del personale con una formazione su misura per ogni ruolo aziendale.</p>
+                        <p><a class="btn btn-mig d-block mx-auto text-white" href="{{route('formazioneRuolo')}}">Scopri di piú</a></p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
                     <div class="feature p-5 d-flex flex-column justify-content-between shadow">
                         <img src="{{Storage::url('public/img/consulenzaAziendale.png')}}" class="img_pills3 rounded-circle d-block mx-auto" alt="">
                         <h2 class="fw-normal text-center title">Consulenza Aziendale</h2>
-                        <p class="text-center">And lastly this, the third column of representative placeholder contentgbkioujyfouvjlk</p>
-                        <p><a class="btn btn-mig d-block mx-auto text-white" href="#">View details »</a></p>
+                        <p class="text-center">Miglioramento dei processi aziendali, ottimizzazione delle operazioni e implementazione di nuove tecnologie.</p>
+                        <p><a class="btn btn-mig d-block mx-auto text-white" href="#">Scopri di piú</a></p>
                     </div>
                 </div>
             </div>

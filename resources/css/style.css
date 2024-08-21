@@ -9,11 +9,12 @@ body{
   font-style: normal;
 }
 
+/* Homepage e navbar */
 
 header {
   position: relative;
   background-color: black;
-  height: 100vh;
+  height: 81vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -64,6 +65,22 @@ header .overlay {
 .nav-link{
   white-space: nowrap;
   margin: 0px 10px;
+  transition: 0.3s;
+}
+
+.nav-link:hover{
+  color: #4DAAE9 !important;
+  transform: scale(1.2);
+}
+
+.dropdown-item{
+  font-size: 19px;
+  transition: 0.3s;
+}
+
+.dropdown-item:hover{
+  background-color: #4DAAE9;
+  color: white;
 }
 
 .logo_nav{
@@ -104,6 +121,11 @@ header .overlay {
   width: 400px;
 }
 
+.bordo3 {
+  border-bottom: 4px solid #4DAAE9;
+  width: 65%;
+}
+
 .feature{
   height: 500px;
 }
@@ -118,6 +140,10 @@ header .overlay {
 
 .facebook{
   color: #2B63F6;
+}
+
+.powered{
+  font-size: 13px;
 }
 
 .sez_accordion{
@@ -154,6 +180,11 @@ header .overlay {
     width: 80%;
   }
 
+  .bordo3 {
+    border-bottom: 4px solid #4DAAE9;
+    width: 80%;
+  }
+
   .accordion {
     width: 100%; 
     max-width: 100%; 
@@ -162,4 +193,53 @@ header .overlay {
   .sez_accordion{
     width: 90%;
   }
+}
+
+/* Chi siamo */
+
+.masthead {
+  height: 60vh;
+  min-height: 400px;
+  background-image: url('../../public/storage/img/chiSiamo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.text-bg-primary{
+  background-color: #4DAAE9 !important;
+}
+
+.btn{
+  background-color: #4DAAE9 !important;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn:hover{
+  background-color: #2D63BC !important;
+  color: white;
+}
+
+/* Formazione Operativa */
+
+.button_durata{
+  background-color: #4DAAE9;
+}
+
+.sez_corso{
+  background-color: #4DAAE9;
+  color: white;
+  width: 80%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+.link_formazione{
+  transition: 0.3s !important;
+}
+
+.link_formazione:hover{
+  color: #4DAAE9 !important;
 }
