@@ -9,6 +9,10 @@ Route::get('chisiamo', [PublicController::class, 'chiSiamo'])->name('chiSiamo');
 // Formazione Operativa
 Route::get('formazioneOperativa', [PublicController::class, 'formazioneOperativa'])->name('formazioneOperativa');
 Route::get('analisiprocessi', [PublicController::class, 'analisiProcessi'])->name('analisiProcessi');
+Route::get('performanceKPI', [PublicController::class, 'performance'])->name('performance');
+Route::get('projectmanagement', [PublicController::class, 'project'])->name('project');
+Route::get('leanSixSigma', [PublicController::class, 'leanSixSigma'])->name('leanSixSigma');
+Route::get('tempiEmetodi', [PublicController::class, 'tempiEmetodi'])->name('tempiEmetodi');
 
 
 // Formazione di Ruolo

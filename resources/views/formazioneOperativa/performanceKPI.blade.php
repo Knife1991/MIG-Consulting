@@ -4,7 +4,7 @@
         <div class="row">
             <!-- Titolo del Corso -->
             <div class="col-12">
-                <h2 class="title my-5 text-center text-md-start">Corso su Analisi e Ottimizzazione dei Processi Produttivi</h2>
+                <h2 class="title my-5 text-center text-md-start">Definizione delle performance e dei KPI (Key Performance Indicators)</h2>
             </div>
     
             <!-- Sezione Obiettivi del Corso -->
@@ -12,9 +12,9 @@
                 <div class="p-4 bg-light rounded shadow-sm">
                     <h3 class="title my-4 text-center text-md-start">Obiettivi del Corso</h3>
                     <ul class="fs-5">
-                        <li><p>Fornire ai partecipanti le competenze necessarie per analizzare e migliorare i processi aziendali.</p></li>
-                        <li><p>Sviluppare la capacità di identificare e ridurre gli sprechi.</p></li>
-                        <li><p>Migliorare l'efficienza operativa e la qualità dei prodotti/servizi.</p></li>
+                        <li><p>Fornire ai partecipanti i criteri di determinazione di efficacia ed efficienza delle operazioni aziendali.</p></li>
+                        <li><p>Sviluppare la capacità di analizzare l'economicità dei processi.</p></li>
+                        <li><p>Sviluppare la capacità di definire i KPI rilevanti secondo badget aziendale.</p></li>
                     </ul>
                 </div>
             </div>
@@ -24,13 +24,12 @@
                 <div class="p-4 bg-light rounded shadow-sm">
                     <h3 class="title my-4 text-center text-md-start">Programma</h3>
                     <ul class="fs-5">
-                        <li><p>Mappatura dei processi (flow chart, diagrammi di flusso)</p></li>
-                        <li><p>Analisi delle criticità e dei colli di bottiglia</p></li>
-                        <li><p>Principi fondamentali del Lean Management</p></li>
-                        <li><p>Identificazione e riduzione degli sprechi (MUDA)</p></li>
-                        <li><p>Tecniche di miglioramento continuo (Kaizen)</p></li>
-                        <li><p>Case Study (Analisi di casi studio reali)</p></li>
-                        <li><p>Progetti di gruppo per l'applicazione delle tecniche apprese</p></li>
+                        <li><p>Introduzione ai KPI</p></li>
+                        <li><p>Implementazione, monitoraggio dei KPI</p></li>
+                        <li><p>Utilizzo del metodo SMART (Specific, Misurable, Achievable, Relevant, Time-Based) per la definizione degli obiettivi</p></li>
+                        <li><p>Differenza tra Efficienza ed Efficacia</p></li>
+                        <li><p>Qualità: Misura della conformità tra output e standard prefissati</p></li>
+                        <li><p>Errori comuni e best practice</p></li>
                     </ul>
                     
                 </div>

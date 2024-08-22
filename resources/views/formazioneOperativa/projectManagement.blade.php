@@ -4,7 +4,7 @@
         <div class="row">
             <!-- Titolo del Corso -->
             <div class="col-12">
-                <h2 class="title my-5 text-center text-md-start">Corso su Analisi e Ottimizzazione dei Processi Produttivi</h2>
+                <h2 class="title my-5 text-center text-md-start">Project Management in azienda.</h2>
             </div>
     
             <!-- Sezione Obiettivi del Corso -->
@@ -12,9 +12,10 @@
                 <div class="p-4 bg-light rounded shadow-sm">
                     <h3 class="title my-4 text-center text-md-start">Obiettivi del Corso</h3>
                     <ul class="fs-5">
-                        <li><p>Fornire ai partecipanti le competenze necessarie per analizzare e migliorare i processi aziendali.</p></li>
-                        <li><p>Sviluppare la capacità di identificare e ridurre gli sprechi.</p></li>
-                        <li><p>Migliorare l'efficienza operativa e la qualità dei prodotti/servizi.</p></li>
+                        <li><p>Fornire ai partecipanti le metodologie fondamentali per impostare e gestire i progetti in azienda.</p></li>
+                        <li><p>Saper utilizzare strumenti e tecniche per controllare l'avanzamento del progetto.</p></li>
+                        <li><p>Ottimizzare la comunicazione con il team e gli stakeholder per garantire chiarezza e allineamento negli obiettivi del progetto.</p></li>
+                        <li><p>Pianificare e allocare le risorse in modo ottimale.</p></li>
                     </ul>
                 </div>
             </div>
@@ -24,13 +25,14 @@
                 <div class="p-4 bg-light rounded shadow-sm">
                     <h3 class="title my-4 text-center text-md-start">Programma</h3>
                     <ul class="fs-5">
-                        <li><p>Mappatura dei processi (flow chart, diagrammi di flusso)</p></li>
-                        <li><p>Analisi delle criticità e dei colli di bottiglia</p></li>
-                        <li><p>Principi fondamentali del Lean Management</p></li>
-                        <li><p>Identificazione e riduzione degli sprechi (MUDA)</p></li>
-                        <li><p>Tecniche di miglioramento continuo (Kaizen)</p></li>
-                        <li><p>Case Study (Analisi di casi studio reali)</p></li>
-                        <li><p>Progetti di gruppo per l'applicazione delle tecniche apprese</p></li>
+                        <li><p>Definizione di progetto</p></li>
+                        <li><p>Introduzione al Project Management</p></li>
+                        <li><p>Metodologie di Project Management</p></li>
+                        <li><p>Pianificazione di un progetto</p></li>
+                        <li><p>Gestione delle risorse</p></li>
+                        <li><p>Gestione dei costi</p></li>
+                        <li><p>Analisi dei rischi di un progetto</p></li>
+                        <li><p>Comunicazione a stakeholder e al management</p></li>
                     </ul>
                     
                 </div>
