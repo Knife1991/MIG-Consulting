@@ -89,7 +89,7 @@
                 <div class="col-12 col-md-8 d-flex align-items-center">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item d-flex d-md-block justify-content-center justify-content-md-start">
-                            <a class="link_formazione text-decoration-none text-center text-black fs-4" href="">Statistica Aziendale SPC (Statistical Process Control).</a>
+                            <a class="link_formazione text-decoration-none text-center text-black fs-4" href="{{route('statisticaSPC')}}">Statistica Aziendale SPC (Statistical Process Control).</a>
                         </li>
                     </ul>
                 </div>
@@ -105,14 +105,14 @@
                 <div class="col-12 col-md-8 d-flex align-items-center">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item d-flex d-md-block justify-content-center justify-content-md-start">
-                            <a class="link_formazione text-decoration-none text-center text-black fs-4" href="">Metodologia SMED (Single Minute Exchange of Die).</a>
+                            <a class="link_formazione text-decoration-none text-center text-black fs-4" href="{{route('metodologiaSMED')}}">Metodologia SMED (Single Minute Exchange of Die).</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="button_durata card d-block mx-auto" style="width: 18rem;">
                         <div class="card-body">
-                          <h5 class="pt-2 text-center fs-3 text-white"><span class="me-2"><i class="bi bi-hourglass-split"></i></span>2 Giorni</h5>
+                          <h5 class="pt-2 text-center fs-3 text-white"><span class="me-2"><i class="bi bi-hourglass-split"></i></span>3 Giorni</h5>
                         </div>
                       </div>
                 </div>
@@ -121,7 +121,7 @@
                 <div class="col-12 col-md-8 d-flex align-items-center">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item d-flex d-md-block justify-content-center justify-content-md-start">
-                            <a class="link_formazione text-decoration-none text-center text-black fs-4" href="">Definizione e calcolo dell'OEE (Overall Equipment Effectiveness).</a>
+                            <a class="link_formazione text-decoration-none text-center text-black fs-4" href="{{route('OEE')}}">Definizione e calcolo dell'OEE (Overall Equipment Effectiveness).</a>
                         </li>
                     </ul>
                 </div>
@@ -137,14 +137,14 @@
                 <div class="col-12 col-md-8 d-flex align-items-center">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item d-flex d-md-block justify-content-center justify-content-md-start">
-                            <a class="link_formazione text-decoration-none text-center text-black fs-4" href="">Contabilità analitica industriale.</a>
+                            <a class="link_formazione text-decoration-none text-center text-black fs-4" href="{{route('contabilitaIndustriale')}}">Contabilità analitica industriale.</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="button_durata card d-block mx-auto" style="width: 18rem;">
                         <div class="card-body">
-                          <h5 class="pt-2 text-center fs-3 text-white"><span class="me-2"><i class="bi bi-hourglass-split"></i></span>3 Giorni</h5>
+                          <h5 class="pt-2 text-center fs-3 text-white"><span class="me-2"><i class="bi bi-hourglass-split"></i></span>2 Giorni</h5>
                         </div>
                       </div>
                 </div>
@@ -153,14 +153,14 @@
                 <div class="col-12 col-md-8 d-flex align-items-center">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item d-flex d-md-block justify-content-center justify-content-md-start">
-                            <a class="link_formazione text-decoration-none text-center text-black fs-4" href="">Introduzione al DoE (Design of Experiments).</a>
+                            <a class="link_formazione text-decoration-none text-center text-black fs-4" href="{{route('DoE')}}">Introduzione al DoE (Design of Experiments).</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="button_durata card d-block mx-auto" style="width: 18rem;">
                         <div class="card-body">
-                          <h5 class="pt-2 text-center fs-3 text-white"><span class="me-2"><i class="bi bi-hourglass-split"></i></span>2 Giorni</h5>
+                          <h5 class="pt-2 text-center fs-3 text-white"><span class="me-2"><i class="bi bi-hourglass-split"></i></span>3 Giorni</h5>
                         </div>
                       </div>
                 </div>

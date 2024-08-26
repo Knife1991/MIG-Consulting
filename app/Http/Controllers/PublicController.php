@@ -40,9 +40,33 @@ class PublicController extends Controller
         return view('formazioneOperativa/tempiEmetodi');
     }
 
+    public function statisticaSPC() {
+        return view('formazioneOperativa/statisticaSPC');
+    }
+
+    public function metodologiaSMED() {
+        return view('formazioneOperativa/metodologiaSMED');
+    }
+
+    public function OEE() {
+        return view('formazioneOperativa/OEE');
+    }
+
+    public function contabilitaIndustriale() {
+        return view('formazioneOperativa/contabilitaIndustriale');
+    }
+
+    public function DoE() {
+        return view('formazioneOperativa/DoE');
+    }
+
     //Formazione di Ruolo
 
     public function formazioneRuolo() {
         return view('formazioneRuolo/formazioneRuolo');
+    }
+
+    public function formazioneLeader() {
+        return view('formazioneRuolo/formazioneLeader');
     }
 }

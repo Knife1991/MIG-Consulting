@@ -13,7 +13,13 @@ Route::get('performanceKPI', [PublicController::class, 'performance'])->name('pe
 Route::get('projectmanagement', [PublicController::class, 'project'])->name('project');
 Route::get('leanSixSigma', [PublicController::class, 'leanSixSigma'])->name('leanSixSigma');
 Route::get('tempiEmetodi', [PublicController::class, 'tempiEmetodi'])->name('tempiEmetodi');
+Route::get('statisticaSPC', [PublicController::class, 'statisticaSPC'])->name('statisticaSPC');
+Route::get('metodologiaSMED', [PublicController::class, 'metodologiaSMED'])->name('metodologiaSMED');
+Route::get('OEE', [PublicController::class, 'OEE'])->name('OEE');
+Route::get('contabilitaIndustriale', [PublicController::class, 'contabilitaIndustriale'])->name('contabilitaIndustriale');
+Route::get('DoE', [PublicController::class, 'DoE'])->name('DoE');
 
 
 // Formazione di Ruolo
 Route::get('formazioneRuolo', [PublicController::class, 'formazioneRuolo'])->name('formazioneRuolo');
+Route::get('formazioneLeader', [PublicController::class, 'formazioneLeader'])->name('formazioneLeader');
