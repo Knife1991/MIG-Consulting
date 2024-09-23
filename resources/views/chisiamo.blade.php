@@ -48,7 +48,7 @@
       <div class="col d-flex flex-column align-items-start gap-2">
         <h2 class="fw-bold text-body-emphasis">Esperienza e competenza <br> al tuo servizio</h2>
         <p class="text-body-secondary">Siamo il tuo partner strategico per crescere ed innovare.</p>
-        <a href="#" class="btn btn-lg">Contattaci</a>
+        <a href="{{route('contatti')}}" class="btn btn-lg">Contattaci</a>
       </div>
       
       <div class="col">

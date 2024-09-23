@@ -23,3 +23,10 @@ Route::get('DoE', [PublicController::class, 'DoE'])->name('DoE');
 // Formazione di Ruolo
 Route::get('formazioneRuolo', [PublicController::class, 'formazioneRuolo'])->name('formazioneRuolo');
 Route::get('formazioneLeader', [PublicController::class, 'formazioneLeader'])->name('formazioneLeader');
+
+// Consulenza Aziendale
+Route::get('consulenza-aziendale', [PublicController::class, 'consulenza'])->name('consulenza-aziendale');
+
+// Contatti
+Route::get('contatti', [PublicController::class, 'contatti'])->name('contatti');
+Route::post('contatti/submit', [PublicController::class, 'submit'])->name('contact.submit');

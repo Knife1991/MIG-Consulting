@@ -1,7 +1,14 @@
 <x-layout>
     
+    @if (session('status'))
+    <div class="alert alert-success">
+        {{ session('status') }}
+    </div>
+    @endif
+    
     {{-- Hero --}}
     <header>
+
         <div class="overlay"></div>
         
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
@@ -38,7 +45,7 @@
                 <div class="col-12 mb-5">
                     <h2 class="fw-normal fs-1 text-center title bordo d-block mx-auto">I NOSTRI SERVIZI</h2>
                 </div>
-                <div class="col-12 col-lg-4">
+                {{-- <div class="col-12 col-lg-4">
                     <div class="feature p-5 d-flex flex-column justify-content-between shadow rounded">
                         <img src="{{Storage::url('public/img/formazioneOperativa.png')}}" class="img_pills1 rounded-circle d-block mx-auto" alt="">
                         <h2 class="fw-normal text-center title">Formazione Operativa</h2>
@@ -53,13 +60,13 @@
                         <p class="text-center">Potenzia le abilità del personale con una formazione su misura per ogni ruolo aziendale.</p>
                         <p><a class="btn btn-mig d-block mx-auto text-white" href="{{route('formazioneRuolo')}}">Scopri di piú</a></p>
                     </div>
-                </div>
-                <div class="col-12 col-lg-4">
+                </div> --}}
+                <div class="col-12 col-lg-8 mx-auto">
                     <div class="feature p-5 d-flex flex-column justify-content-between shadow rounded">
                         <img src="{{Storage::url('public/img/consulenzaAziendale.png')}}" class="img_pills3 rounded-circle d-block mx-auto" alt="">
                         <h2 class="fw-normal text-center title">Consulenza Aziendale</h2>
                         <p class="text-center">Miglioramento dei processi aziendali, ottimizzazione delle operazioni e implementazione di nuove tecnologie.</p>
-                        <p><a class="btn btn-mig d-block mx-auto text-white" href="#">Scopri di piú</a></p>
+                        <p><a class="btn btn-mig d-block mx-auto text-white" href="{{route('consulenza-aziendale')}}">Scopri di piú</a></p>
                     </div>
                 </div>
             </div>
@@ -78,7 +85,7 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                     Focus sul Cliente
+                                    Focus sul Cliente
                                 </button>
                             </h2>
                             <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -88,7 +95,7 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                     Approccio Personalizzato
+                                    Approccio Personalizzato
                                 </button>
                             </h2>
                             <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -98,7 +105,7 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                     Risultati Tangibili
+                                    Risultati Tangibili
                                 </button>
                             </h2>
                             <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">

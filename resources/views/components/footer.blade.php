@@ -20,10 +20,9 @@
       <h5>MIG Consulting</h5>
       <ul class="nav flex-column">
         <li class="nav-item mb-2"><a href="{{route('welcome')}}" class="nav-link p-0 text-body-secondary">Home</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Formazione Operativa</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Formazione di Ruolo</a></li>
         <li class="nav-item mb-2"><a href="{{route('chiSiamo')}}" class="nav-link p-0 text-body-secondary">Chi siamo</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="{{route('consulenza-aziendale')}}" class="nav-link p-0 text-body-secondary">Consulenza Aziendale</a></li>
+        <li class="nav-item mb-2"><a href="{{route('contatti')}}" class="nav-link p-0 text-body-secondary">Contatti</a></li>
       </ul>
     </div>
 
@@ -32,15 +31,20 @@
       <h5>Social</h5>
       <ul class="nav justify-content-md-center justify-content-center">
         <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 text-body-secondary">
-            <i class="bi bi-linkedin fs-2 linkedin"></i>
+          <a target="_blank" href="https://www.linkedin.com/company/mig-consulting-it/" class="nav-link p-0 text-body-secondary">
+            <i class="bi bi-linkedin fs-2 icone_footer"></i>
           </a>
         </li>
         <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 text-body-secondary">
-            <i class="bi bi-facebook fs-2 facebook"></i>
+          <a target="_blank" href="https://www.facebook.com/share/fH7MsH3DNWaSJeDa/?mibextid=LQQJ4d" class="nav-link p-0 text-body-secondary">
+            <i class="bi bi-facebook fs-2 icone_footer"></i>
           </a>
         </li>
+        {{-- <li class="nav-item mb-2">
+          <a href="#" class="nav-link p-0 text-body-secondary">
+            <i class="bi bi-instagram fs-2 icone_footer"></i>
+          </a>
+        </li> --}}
       </ul>
     </div>
   </footer>

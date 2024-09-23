@@ -19,7 +19,7 @@
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="{{route('chiSiamo')}}">Chi siamo</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown d-none">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Formazione
               </a>
@@ -33,10 +33,10 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Consulenza Aziendale</a>
+              <a class="nav-link" href="{{route('consulenza-aziendale')}}">Consulenza Aziendale</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Contatti</a>
+              <a class="nav-link" aria-current="page" href="{{route('contatti')}}">Contatti</a>
             </li>
           </ul>
         </div>

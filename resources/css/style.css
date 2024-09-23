@@ -126,6 +126,11 @@ header .overlay {
   width: 65%;
 }
 
+.bordo4 {
+  border-bottom: 4px solid #4DAAE9;
+  width: 20%;
+}
+
 .feature{
   height: 500px;
 }
@@ -169,34 +174,49 @@ header .overlay {
   .logo_nav{
     width: 200px;
   }
-
+  
   .nav-link:hover{
     color: #4DAAE9 !important;
     transform: scale(1);
   }
-
+  
   .bordo {
     border-bottom: 4px solid #4DAAE9;
     width: 65%; 
   }
-
+  
   .bordo2 {
     border-bottom: 4px solid #4DAAE9;
     width: 80%;
   }
-
+  
   .bordo3 {
     border-bottom: 4px solid #4DAAE9;
     width: 80%;
   }
-
+  
+  .bordo4 {
+    border-bottom: 4px solid #4DAAE9;
+    width: 40%;
+  }
+  
   .accordion {
     width: 100%; 
     max-width: 100%; 
   }
-
+  
   .sez_accordion{
     width: 90%;
+  }
+  
+  .masthead2 {
+    height: 30vh !important;
+    min-height: 300px !important;
+    background-image: url('../../public/storage/img/contatti.jpg');
+    background-size: cover;
+    background-position: -250px 0px !important;
+    background-repeat: no-repeat;
+    transform: scale(1);
   }
 }
 
@@ -257,4 +277,52 @@ header .overlay {
 
 .link_formazione:hover{
   color: #4DAAE9 !important;
+}
+
+.masthead2 {
+  height: 50vh;
+  min-height: 400px;
+  background-image: url('../../public/storage/img/contatti.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.simboli_contatti{
+  background-color: #4DAAE9;
+  padding: 25px 30px;
+  border-radius: 50%;
+  font-size: 40px;
+  color: white;
+}
+
+.icone_social{
+  font-size: 60px;
+  margin: 0px 15px;
+  filter: drop-shadow(2px 2px 2px grey);
+}
+
+.instagram{
+  width: 85px;
+  margin-top: 2px;
+  filter: drop-shadow(2px 2px 2px grey);
+}
+
+.icone_footer{
+  color: #4DAAE9;
+}
+
+.link_contatti{
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+}
+
+.link_contatti:hover{
+  color: #4DAAE9;
+}
+
+.disabled{
+  pointer-events: none;
+  opacity: 0.5;
 }

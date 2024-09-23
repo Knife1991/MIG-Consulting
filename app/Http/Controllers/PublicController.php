@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class PublicController extends Controller
 {
@@ -68,5 +70,29 @@ class PublicController extends Controller
 
     public function formazioneLeader() {
         return view('formazioneRuolo/formazioneLeader');
+    }
+    
+
+    //Consulenza Aziendale
+
+    public function consulenza() {
+        return view('consulenza/consulenza-aziendale');
+    }
+
+    //Contatti
+
+    public function contatti() {
+        return view('contact/contatti');
+    }
+
+    public function submit(Request $request){
+        $name = $request->input('nome');
+        $email = $request->input('email');
+        $body = $request->input('body');
+
+        Mail::to($email)->send(new ContactMail($name, $email, $body));
+
+        return redirect()->route('welcome')->with('status','Messaggio inviato, la ricontatteremo al piú presto.');
+
     }
 }
