@@ -11,8 +11,10 @@
 
         <div class="overlay"></div>
 
-        <video src="video/videoHeader.mp4" type="video/mp4" playsinline autoplay muted loop>
+        <video class="d-none d-md-block" src="video/videoHeader.mp4" type="video/mp4" playsinline autoplay muted loop>
         </video>
+
+        <img class="d-block d-md-none" src="img/fotocell.png" alt="">
 
         <!-- The header content -->
         <div class="container h-100">

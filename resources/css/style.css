@@ -36,6 +36,15 @@ header video {
   transform: translateX(-50%) translateY(-50%);
 }
 
+header img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350%;
+  z-index: 0;
+  transform: translateX(-50%) translateY(-50%);
+}
+
 header .container {
   position: relative;
   z-index: 2;
