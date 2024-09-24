@@ -3,7 +3,7 @@
     <!-- Logo e informazioni -->
     <div class="col mb-3 text-center text-md-start">
       <a href="/" class="d-flex align-items-center mb-3 justify-content-center justify-content-md-start link-body-emphasis text-decoration-none">
-        <img class="logo_nav" src="{{Storage::url('public/img/Logonav.png')}}" alt="Logo aziendale">
+        <img class="logo_nav" src="{{Storage::url('../storage/img/Logonav.png')}}" alt="Logo aziendale">
       </a>
       <p class="text-body-secondary">P.IVA: 04516050715</p>
       <p class="text-body-secondary powered">Powered by <br> Merola Giuseppe - Web Developer <br> © 2024</p>

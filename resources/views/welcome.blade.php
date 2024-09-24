@@ -12,7 +12,7 @@
         <div class="overlay"></div>
         
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-            <source src="{{Storage::url('public/video/videoHeader.mp4')}}" type="video/mp4">
+            <source src="{{Storage::url('../storage/video/videoHeader.mp4')}}" type="video/mp4">
             </video>
             
             <!-- The header content -->
@@ -63,7 +63,7 @@
                 </div> --}}
                 <div class="col-12 col-lg-8 mx-auto">
                     <div class="feature p-5 d-flex flex-column justify-content-between shadow rounded">
-                        <img src="{{Storage::url('public/img/consulenzaAziendale.png')}}" class="img_pills3 rounded-circle d-block mx-auto" alt="">
+                        <img src="{{Storage::url('../storage/img/consulenzaAziendale.png')}}" class="img_pills3 rounded-circle d-block mx-auto" alt="">
                         <h2 class="fw-normal text-center title">Consulenza Aziendale</h2>
                         <p class="text-center">Miglioramento dei processi aziendali, ottimizzazione delle operazioni e implementazione di nuove tecnologie.</p>
                         <p><a class="btn btn-mig d-block mx-auto text-white" href="{{route('consulenza-aziendale')}}">Scopri di piú</a></p>
