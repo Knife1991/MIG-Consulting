@@ -27,7 +27,8 @@
                     <i class="bi bi-telephone-inbound simboli_contatti shadow"></i>
                 </div>
                 <div class="mt-5">
-                    <a href="https://wa.me/3461338998" target="_blank" class="fs-5 link_contatti">Cell: 3461338998</a>
+                    <a href="https://wa.me/3461338998" target="_blank" class="fs-5 link_contatti">Merola Michele (CEO) 3461338998 <br></a>
+                    <a href="https://wa.me/3461338998" target="_blank" class="fs-5 link_contatti">Merola Giuseppe (COO) 3450936597</a>
                 </div>
             </div>
             <!-- Colonna 3 -->
@@ -36,7 +37,8 @@
                     <i class="bi bi-envelope-at simboli_contatti shadow"></i>
                 </div>
                 <div class="mt-5">
-                    <a href="mailto:merolam65@gmail.com" class="fs-5 link_contatti">merolam65@gmail.com</a>
+                    <a href="mailto:merolamichele@mig-consulting.it" class="fs-5 link_contatti">merolamichele@mig-consulting.it</a>
+                    <a href="mailto:merolagiuseppe@mig-consulting.it" class="fs-5 link_contatti">merolagiuseppe@mig-consulting.it</a>
                 </div>
             </div>
         </div>
