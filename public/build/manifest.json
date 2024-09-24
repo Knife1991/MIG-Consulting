@@ -7,8 +7,16 @@
     "file": "assets/bootstrap-icons-BtvjY1KL.woff2",
     "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2"
   },
+  "public/img/chiSiamo.png": {
+    "file": "assets/chiSiamo-B9r2sdkF.png",
+    "src": "public/img/chiSiamo.png"
+  },
+  "public/img/contatti.jpg": {
+    "file": "assets/contatti-C0O71NXw.jpg",
+    "src": "public/img/contatti.jpg"
+  },
   "resources/css/app.css": {
-    "file": "assets/app-CKBw4h28.css",
+    "file": "assets/app-CaPPSSe3.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
