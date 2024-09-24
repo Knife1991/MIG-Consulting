@@ -33,7 +33,7 @@ class ContactMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: new Address('merolagiuseppe@mig-consulting.it', 'MIG Consulting'),
+            from: new Address($this->email, $this->name),
             subject: 'Richiesta di contatto MIG',
         );
     }
