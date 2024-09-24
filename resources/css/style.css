@@ -221,7 +221,7 @@ header .overlay {
   .masthead2 {
     height: 30vh !important;
     min-height: 300px !important;
-    background-image: url('../../public/storage/img/contatti.jpg');
+    background-image: url('../../public/img/contatti.jpg');
     background-size: cover;
     background-position: -250px 0px !important;
     background-repeat: no-repeat;
@@ -234,7 +234,7 @@ header .overlay {
 .masthead {
   height: 60vh;
   min-height: 400px;
-  background-image: url('../../public/storage/img/chiSiamo.png');
+  background-image: url('../../public/img/chiSiamo.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -291,7 +291,7 @@ header .overlay {
 .masthead2 {
   height: 50vh;
   min-height: 400px;
-  background-image: url('../../public/storage/img/contatti.jpg');
+  background-image: url('../../public/img/contatti.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
