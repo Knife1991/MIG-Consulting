@@ -87,13 +87,14 @@ class PublicController extends Controller
 
     public function submit(Request $request) {
         $name = $request->input('nome');
-        $email = $request->input('email');
+        $email = $request->input('email'); // L'email dell'utente
         $body = $request->input('body');
     
         // Invia l'email a entrambi gli indirizzi
         Mail::to(['merolagiuseppe@mig-consulting.it', 'merolamichele@mig-consulting.it'])
-            ->send(new ContactMail($name, $email, $body));
+            ->send(new ContactMail($name, $email, $body)); // Passa l'email dell'utente
     
-        return redirect()->route('welcome')->with('status','Messaggio inviato, la ricontatteremo al più presto.');
+        return redirect()->route('welcome')->with('status', 'Messaggio inviato, la ricontatteremo al più presto.');
     }
+    
 }

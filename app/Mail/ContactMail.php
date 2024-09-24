@@ -14,14 +14,16 @@ class ContactMail extends Mailable
     use Queueable, SerializesModels;
     
     public $name;
+    public $email; // Aggiungi la variabile email
     public $body;
 
     /**
      * Create a new message instance.
      */
-    public function __construct($name, $body)
+    public function __construct($name, $email, $body)
     {
         $this->name = $name;
+        $this->email = $email; // Assegna l'email dell'utente
         $this->body = $body;
     }
 
@@ -45,6 +47,7 @@ class ContactMail extends Mailable
             view: 'mail.contact-mail',
             with: [
                 'name' => $this->name,
+                'email' => $this->email, // Passa l'email dell'utente
                 'body' => $this->body
             ]
         );
