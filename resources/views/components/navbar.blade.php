@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Offcanvas navbar large">
     <div class="container-fluid px-md-5">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="{{route('welcome')}}">
         <img class="logo_nav" src="img/Logonav.png" alt="Logo aziendale">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
