@@ -8,7 +8,7 @@
     "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2"
   },
   "resources/css/app.css": {
-    "file": "assets/app-DbgtZxm1.css",
+    "file": "assets/app-CKBw4h28.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -17,13 +17,5 @@
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true
-  },
-  "storage/app/public/img/chiSiamo.png": {
-    "file": "assets/chiSiamo-B9r2sdkF.png",
-    "src": "storage/app/public/img/chiSiamo.png"
-  },
-  "storage/app/public/img/contatti.jpg": {
-    "file": "assets/contatti-C0O71NXw.jpg",
-    "src": "storage/app/public/img/contatti.jpg"
   }
 }
