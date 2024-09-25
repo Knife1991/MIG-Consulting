@@ -23,6 +23,7 @@
         <li class="nav-item mb-2"><a href="{{route('chiSiamo')}}" class="nav-link p-0 text-body-secondary">Chi siamo</a></li>
         <li class="nav-item mb-2"><a href="{{route('consulenza-aziendale')}}" class="nav-link p-0 text-body-secondary">Consulenza Aziendale</a></li>
         <li class="nav-item mb-2"><a href="{{route('contatti')}}" class="nav-link p-0 text-body-secondary">Contatti</a></li>
+        <li class="nav-item mb-2"><a href="{{route('privacy')}}" class="nav-link p-0 text-body-secondary">Privacy Policy</a></li>
       </ul>
     </div>
 

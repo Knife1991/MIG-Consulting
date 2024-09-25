@@ -96,5 +96,11 @@ class PublicController extends Controller
     
         return redirect()->route('welcome')->with('status', 'Messaggio inviato, la ricontatteremo al più presto.');
     }
+
+    // Privacy
+
+    public function privacy(){
+        return view('privacy');
+    }
     
 }

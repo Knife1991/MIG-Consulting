@@ -30,3 +30,7 @@ Route::get('consulenza-aziendale', [PublicController::class, 'consulenza'])->nam
 // Contatti
 Route::get('contatti', [PublicController::class, 'contatti'])->name('contatti');
 Route::post('contatti/submit', [PublicController::class, 'submit'])->name('contact.submit');
+
+
+// Privacy
+Route::get('privacy', [PublicController::class, 'privacy'])->name('privacy');
