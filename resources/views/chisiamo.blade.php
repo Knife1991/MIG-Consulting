@@ -67,7 +67,7 @@
               <svg class="bi" width="1em" height="1em">
               </svg>
             </div>
-            <p class="text-body-secondary">Siamo constantemente alla ricerca di nuovi idee e soluzioni.</p>
+            <p class="text-body-secondary">Siamo constantemente alla ricerca di nuove idee e soluzioni.</p>
           </div>
           
           <div class="col d-flex flex-column gap-2">
@@ -76,7 +76,7 @@
               <svg class="bi" width="1em" height="1em">
               </svg>
             </div>
-            <p class="text-body-secondary">Lavoriamo a stretto contatto con i nopstri clienti per comprendere e soddisfare le loro esigenze.</p>
+            <p class="text-body-secondary">Lavoriamo a stretto contatto con i nostri clienti per comprendere e soddisfare le loro esigenze.</p>
           </div>
           
           <div class="col d-flex flex-column gap-2">
