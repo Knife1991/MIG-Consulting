@@ -2,6 +2,9 @@
     
     <div class="container">
         <div class="row">
+            <div class="col-3">
+                <a class="btn btn-mig d-block text-white mt-5" href="{{ route('welcome') }}">Torna indietro</a>
+            </div>
             <div class="col-12">
                 <h2 class="title my-5 text-center text-md-start">Formazione di Ruolo</h2>
             </div>

@@ -46,9 +46,9 @@
             <div class="col-12 mb-5">
                 <h2 class="fw-normal fs-1 text-center title bordo d-block mx-auto">I NOSTRI SERVIZI</h2>
             </div>
-            {{-- <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4">
                     <div class="feature p-5 d-flex flex-column justify-content-between shadow rounded">
-                        <img src="{{Storage::url('public/img/formazioneOperativa.png')}}" class="img_pills1 rounded-circle d-block mx-auto" alt="">
+                        <img src="img/formazioneOperativa.png" class="img_pills1 rounded-circle d-block mx-auto" alt="">
                         <h2 class="fw-normal text-center title">Formazione Operativa</h2>
                         <p class="text-center">Formazione su competenze pratiche per migliorare l’efficienza e la produttività dei tuoi processi.</p>
                         <p><a class="btn btn-mig d-block mx-auto text-white" href="{{route('formazioneOperativa')}}">Scopri di piú</a></p>
@@ -56,13 +56,13 @@
                 </div>
                 <div class="col-12 col-lg-4">
                     <div class="feature p-5 d-flex flex-column justify-content-between shadow rounded">
-                        <img src="{{Storage::url('public/img/formazioneDiRuolo.png')}}" class="img_pills2 rounded-circle d-block mx-auto" alt="">
+                        <img src="img/formazioneDiRuolo.png" class="img_pills2 rounded-circle d-block mx-auto" alt="">
                         <h2 class="fw-normal text-center title">Formazione di Ruolo</h2>
                         <p class="text-center">Potenzia le abilità del personale con una formazione su misura per ogni ruolo aziendale.</p>
                         <p><a class="btn btn-mig d-block mx-auto text-white" href="{{route('formazioneRuolo')}}">Scopri di piú</a></p>
                     </div>
-                </div> --}}
-            <div class="col-12 col-lg-8 mx-auto">
+                </div>
+            <div class="col-12 col-lg-4">
                 <div class="feature p-5 d-flex flex-column justify-content-between shadow rounded">
                     <img src="img/consulenzaAziendale.png" class="img_pills3 rounded-circle d-block mx-auto"
                         alt="">
