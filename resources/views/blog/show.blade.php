@@ -7,15 +7,15 @@
     <div class="container my-3 p-5 shadow" style="max-width: 1024px;">
         
         @if($post->image_url ?? false)
-            <img src="{{ $post->image_url }}" alt="{{ $post->title }}" 
+            <img src="{{ $post->image_url }}" alt="{{ strip_tags($post->title) }}" 
                  class="img-fluid rounded mb-4"
                  style="max-height: 400px; width: 100%; object-fit: cover;">
         @endif
 
-        <h1>{{ $post->title }}</h1>
+        <h1>{!! $post->title !!}</h1>
 
         <div class="mt-4">
-            {!! nl2br(e($post->body)) !!}
+            {!! $post->body !!}
         </div>
 
         <div class="d-flex justify-content-between align-items-start flex-wrap mt-5">
