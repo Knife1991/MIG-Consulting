@@ -24,7 +24,7 @@
                                      style="max-height: 250px; object-fit: cover; width: 100%;">
                             @endif
                             <div class="card-body d-flex flex-column">
-                                <h3 class="card-title fw-semibold">{{ $post->title }}</h3>
+                                <h3 class="card-title fw-semibold">{!! $post->title !!}</h3>
                                 <p class="text-muted mb-2 small">
                                     Pubblicato il {{ $post->created_at->format('d M Y') }}
                                     @if($post->author)
