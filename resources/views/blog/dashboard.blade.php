@@ -24,10 +24,10 @@
                         <td>{{ $post->title }}</td>
                         <td class="text-truncate">{!! $post->body !!}</td>
                         <td>{{ $post->created_at->format('d/m/Y') }}</td>
-                        <td>
-                            <a href="{{ route('blog.show', $post->slug) }}" class="btn btn-secondary btn-sm shadow me-1">Leggi articolo</a>
+                        <td class="d-flex flex-wrap gap-2 align-items-center">
+                            <a href="{{ route('blog.show', $post->slug) }}" class="btn btn-secondary btn-sm shadow">Leggi articolo</a>
                             <a href="{{ route('posts.edit', $post) }}" class="btn bottoneMOD btn-sm shadow">Modifica</a>
-                            <form action="{{ route('posts.destroy', $post) }}" method="POST" style="display:inline-block;" onsubmit="return confirm('Sei sicuro di voler eliminare questo articolo?');">
+                            <form action="{{ route('posts.destroy', $post) }}" method="POST" onsubmit="return confirm('Sei sicuro di voler eliminare questo articolo?');">
                                 @csrf
                                 @method('DELETE')
                                 <button class="btn bottoneCANC btn-sm shadow">Elimina</button>
