@@ -6,12 +6,14 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasNavbar2Label">MIG Consulting</h5>
         <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-      <div class="offcanvas-body">
+      
+      <div class="offcanvas-body position-relative">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-5">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="{{route('welcome')}}">Home</a>
@@ -41,7 +43,9 @@
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="{{route('contatti')}}">Contatti</a>
           </li>
-          <li class="nav-item ms-3">
+
+          <!-- OMINO DESKTOP -->
+          <li class="nav-item ms-3 d-none d-lg-block">
             <div class="dropdown">
               <button class="bottone_persona" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="bi bi-person fs-3"></i>
@@ -52,9 +56,9 @@
                   <a href="{{ route('login') }}" class="dropdown-item">Login</a>
                 </li>
                 @endguest
-                
+
                 @auth
-                <li class="nav-item">
+                <li>
                   <a class="dropdown-item" href="{{ route('posts.dashboard') }}">Dashboard</a>
                 </li>
                 <li>
@@ -66,8 +70,36 @@
                 @endauth
               </ul>
             </div>
-          </li>                           
+          </li>
         </ul>
+
+        <!-- OMINO MOBILE IN BASSO CON DROPDOWN VERSO L'ALTO -->
+        <div class="position-absolute bottom-0 start-0 p-3 d-lg-none">
+          <div class="dropup">
+            <button class="bottone_persona" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-person fs-3"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-start">
+              @guest
+              <li>
+                <a href="{{ route('login') }}" class="dropdown-item">Login</a>
+              </li>
+              @endguest
+
+              @auth
+              <li>
+                <a class="dropdown-item" href="{{ route('posts.dashboard') }}">Dashboard</a>
+              </li>
+              <li>
+                <form method="POST" action="{{ route('logout') }}">
+                  @csrf
+                  <button class="dropdown-item" type="submit">Logout</button>
+                </form>
+              </li>
+              @endauth
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
