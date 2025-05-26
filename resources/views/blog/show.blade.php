@@ -1,4 +1,5 @@
-<x-layout>
+<x-layout :post="$post">
+
     <!-- Pulsante a sinistra in alto -->
     <div class="container-fluid px-3 mt-5">
         <a class="btn btn-secondary shadow" href="{{ route('blog.index') }}">← Torna agli articoli</a>

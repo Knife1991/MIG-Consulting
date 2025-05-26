@@ -9,19 +9,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
-    @if(isset($post))
-    <meta property="og:title" content="{{ strip_tags($post->title) }}" />
+    @if (isset($post))
+    <meta property="og:title" content="{{ $post->title }}" />
     <meta property="og:description" content="{{ Str::limit(strip_tags($post->body), 150) }}" />
-    <meta property="og:image" content="{{ $post->image_url ?? asset('default-image.jpg') }}" />
-    <meta property="og:url" content="{{ request()->fullUrl() }}" />
+    <meta property="og:image" content="{{ url($post->image_url ?? '/images/default.jpg') }}" />
+    <meta property="og:url" content="{{ url()->current() }}" />
     <meta property="og:type" content="article" />
-
+    
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="{{ strip_tags($post->title) }}" />
+    <meta name="twitter:title" content="{{ $post->title }}" />
     <meta name="twitter:description" content="{{ Str::limit(strip_tags($post->body), 150) }}" />
-    <meta name="twitter:image" content="{{ $post->image_url ?? asset('default-image.jpg') }}" />
-@endif
-
+    <meta name="twitter:image" content="{{ url($post->image_url ?? '/images/default.jpg') }}" />
+    @endif
 </head>
 <body>
     
@@ -41,8 +40,8 @@
             n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
             (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
             ml('account', '1548519');
-    </script>
-    <!-- End MailerLite Universal -->
+        </script>
+        <!-- End MailerLite Universal -->
         
     </body>
     </html>
