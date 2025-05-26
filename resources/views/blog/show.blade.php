@@ -34,13 +34,13 @@
     </div>
 
     <!-- CARD ARTICOLO -->
-    <div class="container my-3 p-0 shadow" style="max-width: 1024px; position: relative;">
+    <div class="container my-3 p-0 shadow px-3 px-md-0" style="max-width: 1024px; position: relative;">
 
         <!-- MENU 3 PUNTINI MOBILE SOVRAPPOSTO IMMAGINE -->
-        <div class="d-md-none position-absolute" style="top: 10px; right: 10px; z-index: 10;">
-            <div class="dropup">
-                <button class="btn btn-light" type="button" id="socialDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="bi bi-three-dots-vertical fs-5"></i>
+        <div class="d-md-none position-absolute px-2" style="top: 10px; right: 20px; z-index: 10;">
+            <div class="dropdown">
+                <button class="btn bottoneMOBILE bg-white" type="button" id="socialDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-three-dots text-secondary fs-5"></i>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="socialDropdown">
                     <li>
@@ -87,11 +87,16 @@
                 {!! $post->body !!}
             </div>
 
-            <div class="d-flex justify-content-between align-items-start flex-wrap mt-5">
-                <div class="ml-embedded me-5" data-form="GgDHUs" style="min-width: 300px;"></div>
-                <div>
+            <!-- SEZIONE AUTORE E NEWSLETTER -->
+            <div class="mt-5 row">
+                <!-- Autore prima su mobile -->
+                <div class="col-12 col-md-6 order-1 order-md-2 mb-4 mb-md-0">
                     <h6>Autore</h6>
                     <p class="mb-0">{{ $post->author?->name ?? 'Autore sconosciuto' }}</p>
+                </div>
+                <!-- Newsletter -->
+                <div class="col-12 col-md-6 order-2 order-md-1">
+                    <div class="ml-embedded" data-form="GgDHUs" style="min-width: 100%;"></div>
                 </div>
             </div>
         </div>

@@ -382,4 +382,14 @@ header .overlay {
   background-color: rgb(77, 212, 77) !important;
 }
 
+.bottoneMOBILE{
+  background-color: white !important;
+  color: #4DAAE9 !important;
+  transition: 0.3s;
+}
+
+.bottoneMOBILE:hover{
+  background-color: #4DAAE9 !important;
+  color: white !important;
+}
 
