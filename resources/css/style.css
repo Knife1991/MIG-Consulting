@@ -79,7 +79,7 @@ header .overlay {
 
 .nav-link:hover{
   color: #4DAAE9 !important;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .dropdown-item{
@@ -94,6 +94,18 @@ header .overlay {
 
 .logo_nav{
   width: 250px;
+}
+
+.bottone_persona{
+  border: none;
+  background-color: transparent;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.bottone_persona:hover{
+  color: #4DAAE9 !important;
+  transform: scale(1.1);
 }
 
 .img_pills1{
@@ -338,4 +350,34 @@ header .overlay {
 
 .bg_cookie{
   background-color: rgb(219, 219, 219);
+}
+
+.bottoneMOD{
+  background-color: yellow !important;
+  color: black !important;
+  transition: 0.3s;
+}
+
+.bottoneCANC{
+  background-color: red !important;
+  color: white !important;
+  transition: 0.3s;
+}
+
+.bottoneAGG{
+  background-color: green !important;
+  color: white !important;
+  transition: 0.3s;
+}
+
+.bottoneMOD:hover{
+  background-color: rgb(184, 184, 98) !important;
+}
+
+.bottoneCANC:hover{
+  background-color: rgb(218, 114, 114) !important;
+}
+
+.bottoneAGG:hover{
+  background-color: rgb(77, 212, 77) !important;
 }

@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\PublicController;
 
 Route::get('/', [PublicController::class, "homepage"])->name('welcome');
@@ -30,6 +32,22 @@ Route::get('consulenza-aziendale', [PublicController::class, 'consulenza'])->nam
 // Contatti
 Route::get('contatti', [PublicController::class, 'contatti'])->name('contatti');
 Route::post('contatti/submit', [PublicController::class, 'submit'])->name('contact.submit');
+
+
+// Blog
+Route::get('/blog', [PostController::class, 'index'])->name('blog.index');
+Route::get('/blog/create', [PostController::class, 'create'])->name('blog.create')->middleware('auth');
+Route::post('/blog', [PostController::class, 'store'])->name('blog.store')->middleware('auth');
+Route::get('/blog/{slug}', [PostController::class, 'show'])->name('blog.show');
+Route::get('/dashboard/posts', [PostController::class, 'dashboard'])->name('posts.dashboard')->middleware('auth');
+Route::get('/posts/{post}/edit', [PostController::class, 'edit'])->name('posts.edit')->middleware('auth');
+Route::put('/posts/{post}', [PostController::class, 'update'])->name('posts.update')->middleware('auth');
+Route::delete('/posts/{post}', [PostController::class, 'destroy'])->name('posts.destroy')->middleware('auth');
+
+// Fortify
+Route::get('/login', function () {
+    return view('auth.login');
+})->name('login');
 
 
 // Privacy
