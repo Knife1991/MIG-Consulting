@@ -1,29 +1,5 @@
 <x-layout>
-    @php
-        $shareUrl = urlencode(request()->fullUrl());
-        $shareTitle = urlencode(strip_tags($post->title));
-    @endphp
-
-    <!-- MENU SOCIAL DESKTOP -->
-    <div class="d-none d-md-flex flex-column position-fixed" style="top: 50%; right: 15px; transform: translateY(-50%); z-index: 1000;">
-        <a href="https://www.facebook.com/sharer/sharer.php?u={{ $shareUrl }}" target="_blank" class="btn btn-outline-primary mb-2" title="Condividi su Facebook">
-            <i class="bi bi-facebook fs-4"></i>
-        </a>
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ $shareUrl }}&title={{ $shareTitle }}" target="_blank" class="btn btn-outline-info mb-2" title="Condividi su LinkedIn">
-            <i class="bi bi-linkedin fs-4"></i>
-        </a>
-        <a href="https://wa.me/?text={{ $shareTitle }}%20{{ $shareUrl }}" target="_blank" class="btn btn-outline-success mb-2" title="Condividi su WhatsApp">
-            <i class="bi bi-whatsapp fs-4"></i>
-        </a>
-        <a href="https://x.com/intent/tweet?text={{ $shareTitle }}&url={{ $shareUrl }}" target="_blank" class="btn btn-outline-dark mb-2" title="Condividi su X">
-            <i class="bi bi-twitter-x fs-4"></i>
-        </a>
-        <button onclick="navigator.clipboard.writeText(decodeURIComponent('{{ $shareUrl }}'))" class="btn btn-outline-secondary" title="Copia link">
-            <i class="bi bi-clipboard fs-4"></i>
-        </button>
-    </div>
-
-    <!-- Pulsanti in alto -->
+    <!-- Pulsante a sinistra in alto -->
     <div class="container-fluid px-3 mt-5">
         <a class="btn btn-secondary shadow" href="{{ route('blog.index') }}">← Torna agli articoli</a>
         @auth
@@ -33,72 +9,91 @@
         @endauth
     </div>
 
-    <!-- CARD ARTICOLO -->
-    <div class="container my-3 p-0 shadow px-3 px-md-0" style="max-width: 1024px; position: relative;">
-
-        <!-- MENU 3 PUNTINI MOBILE SOVRAPPOSTO IMMAGINE -->
-        <div class="d-md-none position-absolute px-2" style="top: 10px; right: 20px; z-index: 10;">
-            <div class="dropdown">
-                <button class="btn bottoneMOBILE bg-white" type="button" id="socialDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="bi bi-three-dots text-secondary fs-5"></i>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="socialDropdown">
-                    <li>
-                        <a class="dropdown-item" href="https://www.facebook.com/sharer/sharer.php?u={{ $shareUrl }}" target="_blank">
-                            <i class="bi bi-facebook me-2"></i>Facebook
-                        </a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="https://www.linkedin.com/shareArticle?mini=true&url={{ $shareUrl }}&title={{ $shareTitle }}" target="_blank">
-                            <i class="bi bi-linkedin me-2"></i>LinkedIn
-                        </a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="https://wa.me/?text={{ $shareTitle }}%20{{ $shareUrl }}" target="_blank">
-                            <i class="bi bi-whatsapp me-2"></i>WhatsApp
-                        </a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="https://x.com/intent/tweet?text={{ $shareTitle }}&url={{ $shareUrl }}" target="_blank">
-                            <i class="bi bi-twitter-x me-2"></i>X
-                        </a>
-                    </li>
-                    <li>
-                        <button class="dropdown-item" onclick="navigator.clipboard.writeText(decodeURIComponent('{{ $shareUrl }}'))">
-                            <i class="bi bi-clipboard me-2"></i>Copia link
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- IMMAGINE -->
+    <div class="container my-3 p-5 shadow" style="max-width: 1024px; position: relative;">
+        
         @if($post->image_url ?? false)
             <img src="{{ $post->image_url }}" alt="{{ strip_tags($post->title) }}" 
-                class="img-fluid rounded-top"
-                style="max-height: 400px; width: 100%; object-fit: cover;">
+                 class="img-fluid rounded mb-4"
+                 style="max-height: 400px; width: 100%; object-fit: cover;">
         @endif
 
-        <!-- CONTENUTO ARTICOLO -->
-        <div class="p-5">
-            <h1>{!! $post->title !!}</h1>
+        <h1>{!! $post->title !!}</h1>
 
-            <div class="mt-4">
-                {!! $post->body !!}
-            </div>
+        <div class="mt-4">
+            {!! $post->body !!}
+        </div>
 
-            <!-- SEZIONE AUTORE E NEWSLETTER -->
-            <div class="mt-5 row">
-                <!-- Autore prima su mobile -->
-                <div class="col-12 col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+        <!-- MENU CONDIVISIONE LATERALE DA PC -->
+        <div class="d-none d-md-flex flex-column position-fixed" style="top: 220px; right: 20px; z-index: 10;">
+            <p class="condividi">Condividi</p>
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(request()->fullUrl()) }}" target="_blank" class="btn btn-outline-primary mb-2" title="Condividi su Facebook">
+                <i class="bi bi-facebook fs-4"></i>
+            </a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ urlencode(request()->fullUrl()) }}" target="_blank" class="btn btn-outline-info mb-2" title="Condividi su LinkedIn">
+                <i class="bi bi-linkedin fs-4"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?text={{ urlencode(request()->fullUrl()) }}" target="_blank" class="btn btn-outline-success mb-2" title="Condividi su WhatsApp">
+                <i class="bi bi-whatsapp fs-4"></i>
+            </a>
+            <a href="https://twitter.com/intent/tweet?url={{ urlencode(request()->fullUrl()) }}" target="_blank" class="btn btn-outline-info mb-2" title="Condividi su X">
+                <i class="bi bi-x fs-4"></i>
+            </a>
+            <button class="btn btn-outline-secondary" onclick="navigator.clipboard.writeText('{{ request()->fullUrl() }}')" title="Copia link">
+                <i class="bi bi-clipboard fs-4"></i>
+            </button>
+        </div>
+
+        <!-- SEZIONE AUTORE E NEWSLETTER CON BOTTONE CONDIVIDI MOBILE -->
+        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 mt-5 px-md-5">
+            <div class="d-flex align-items-center justify-content-between w-100 d-md-block">
+                <div>
                     <h6>Autore</h6>
                     <p class="mb-0">{{ $post->author?->name ?? 'Autore sconosciuto' }}</p>
                 </div>
-                <!-- Newsletter -->
-                <div class="col-12 col-md-6 order-2 order-md-1">
-                    <div class="ml-embedded" data-form="GgDHUs" style="min-width: 100%;"></div>
+                <!-- Pulsante condividi solo mobile -->
+                <div class="d-md-none">
+                    <div class="dropdown">
+                        <button class="btn btn-light shadow" type="button" id="socialDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Condividi 📲</i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="socialDropdown">
+                            <li>
+                                <a class="dropdown-item" href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(request()->fullUrl()) }}" target="_blank">
+                                    <i class="bi bi-facebook me-2"></i>Facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://www.linkedin.com/shareArticle?mini=true&url={{ urlencode(request()->fullUrl()) }}&title={{ urlencode($post->title) }}" target="_blank">
+                                    <i class="bi bi-linkedin me-2"></i>LinkedIn
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://wa.me/?text={{ urlencode($post->title) }}%20{{ urlencode(request()->fullUrl()) }}" target="_blank">
+                                    <i class="bi bi-whatsapp me-2"></i>WhatsApp
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://x.com/intent/tweet?text={{ urlencode($post->title) }}&url={{ urlencode(request()->fullUrl()) }}" target="_blank">
+                                    <i class="bi bi-twitter-x me-2"></i>X
+                                </a>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" onclick="navigator.clipboard.writeText('{{ request()->fullUrl() }}')">
+                                    <i class="bi bi-clipboard me-2"></i>Copia link
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+
+            <!-- Newsletter -->
+            <div class="col-12 col-md-6 order-2 order-md-1">
+                <div class="ml-embedded" data-form="GgDHUs" style="min-width: 100%;"></div>
+            </div>
+            
         </div>
     </div>
 </x-layout>
+
+
