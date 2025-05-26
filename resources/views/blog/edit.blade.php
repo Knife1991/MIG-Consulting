@@ -14,17 +14,18 @@
                     @method('PUT')
 
                     <div class="mb-3">
-                        <label for="title" class="form-label">Titolo</label>
+                        <label for="title" class="form-label fw-bold">Titolo</label>
                         <input type="text" name="title" value="{{ $post->title }}" class="form-control" required>
                     </div>
 
-                    <div class="mb-3">
-                        <label for="body" class="form-label">Corpo</label>
-                        <textarea name="body" rows="6" class="form-control" required>{{ $post->body }}</textarea>
-                    </div>
+                    <div class="mb-4">
+                        <label for="body" class="form-label fw-bold">Contenuto dell’articolo</label>
+                        <input id="body" type="hidden" name="body" value="{{ old('body', $post->body ?? '') }}">
+                        <trix-editor input="body"></trix-editor>
+                    </div>                    
 
                     <div class="mb-3">
-                        <label for="image" class="form-label">Immagine di copertina (opzionale)</label>
+                        <label for="image" class="form-label fw-bold">Immagine di copertina (opzionale)</label>
                         <input type="file" name="image" id="image" accept="image/*" class="form-control">
 
                         <!-- Anteprima immagine -->

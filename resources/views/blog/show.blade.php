@@ -2,7 +2,13 @@
     <!-- Pulsante a sinistra in alto -->
     <div class="container-fluid px-3 mt-5">
         <a class="btn btn-secondary shadow" href="{{ route('blog.index') }}">← Torna agli articoli</a>
+        @auth
+        <div class="my-3">
+            <a href="{{ route('posts.dashboard') }}" class="btn bottoneMOD shadow">Vai alla dashboard</a>
+        </div>
+        @endauth
     </div>
+
 
     <div class="container my-3 p-5 shadow" style="max-width: 1024px;">
         
