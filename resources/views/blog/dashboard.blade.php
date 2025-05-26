@@ -22,7 +22,7 @@
                 @foreach($posts as $post)
                     <tr>
                         <td>{{ $post->title }}</td>
-                        <td class="text-truncate">{{ $post->body }}</td>
+                        <td class="text-truncate">{{!! $post->body !!}}</td>
                         <td>{{ $post->created_at->format('d/m/Y') }}</td>
                         <td>
                             <a href="{{ route('posts.edit', $post) }}" class="btn bottoneMOD btn-sm shadow">Modifica</a>
