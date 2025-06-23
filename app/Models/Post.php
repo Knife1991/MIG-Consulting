@@ -43,7 +43,7 @@ class Post extends Model implements Feedable
             'updated'     => $this->updated_at,
             'link'        => route('blog.show', ['slug' => $this->slug]),
             'authorName'  => $this->author ? $this->author->name : 'MIG Consulting',
-            'enclosure'   => asset($this->image_url), // URL assoluto dell’immagine
+            'enclosure' => $this->image_url ? asset($this->image_url) : null, // importante: asset()
         ]);
     }
 }
