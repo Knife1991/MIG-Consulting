@@ -397,7 +397,14 @@ header .overlay {
   font-size: 15px !important;
 }
 
-.corpoArticolo{
+.corpoArticolo {
+  max-width: 1024px;
+  margin: auto;
   padding: 50px 60px !important;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  text-align: justify;
+  position: relative;
 }
+
 
