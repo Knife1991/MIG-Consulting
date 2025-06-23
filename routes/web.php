@@ -43,6 +43,8 @@ Route::get('/dashboard/posts', [PostController::class, 'dashboard'])->name('post
 Route::get('/posts/{post}/edit', [PostController::class, 'edit'])->name('posts.edit')->middleware('auth');
 Route::put('/posts/{post}', [PostController::class, 'update'])->name('posts.update')->middleware('auth');
 Route::delete('/posts/{post}', [PostController::class, 'destroy'])->name('posts.destroy')->middleware('auth');
+Route::feeds();
+
 
 // Fortify
 Route::get('/login', function () {
