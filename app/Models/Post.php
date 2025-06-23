@@ -10,7 +10,7 @@ use Spatie\Feed\Feedable;
 class Post extends Model implements Feedable
 {
     protected $fillable = ['title', 'body', 'slug', 'image_url', 'user_id'];
-
+    
     protected static function boot()
     {
         parent::boot();
@@ -18,17 +18,17 @@ class Post extends Model implements Feedable
             $post->slug = Str::slug($post->title) . '-' . uniqid();
         });
     }
-
+    
     public function author()
     {
         return $this->belongsTo(User::class, 'user_id');
     }
-
+    
     public static function getFeedItems()
     {
         return self::latest()->take(20)->get();
     }
-
+    
     public function toFeedItem(): FeedItem
     {
         return FeedItem::create([
@@ -38,6 +38,8 @@ class Post extends Model implements Feedable
             'updated' => $this->updated_at,
             'link' => route('blog.show', ['slug' => $this->slug]),
             'authorName' => $this->author ? $this->author->name : 'MIG Consulting',
+            'enclosure' => $this->image_url, // ← immagine (per MailerLite)
         ]);
     }
+    
 }
