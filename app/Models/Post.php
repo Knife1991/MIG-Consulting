@@ -37,7 +37,7 @@ class Post extends Model implements Feedable
             'summary' => Str::limit(strip_tags($this->body), 150),
             'updated' => $this->updated_at,
             'link' => route('blog.show', ['slug' => $this->slug]),
-            'author' => $this->author ? $this->author->name : 'MIG Consulting',
+            'authorName' => $this->author ? $this->author->name : 'MIG Consulting',
         ]);
     }
 }
