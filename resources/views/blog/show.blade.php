@@ -10,7 +10,7 @@
         @endauth
     </div>
 
-    <div class="container corpoArticolo my-3 p-3 shadow">
+    <div class="container corpoArticolo my-3 p-3 shadow" style="max-width: 1024px; position: relative;">
         
         @if($post->image_url ?? false)
             <img src="{{ $post->image_url }}" alt="{{ strip_tags($post->title) }}" 
