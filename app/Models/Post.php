@@ -14,7 +14,6 @@ class Post extends Model implements Feedable
     protected static function boot()
     {
         parent::boot();
-
         static::creating(function ($post) {
             $post->slug = Str::slug($post->title) . '-' . uniqid();
         });
@@ -25,20 +24,20 @@ class Post extends Model implements Feedable
         return $this->belongsTo(User::class, 'user_id');
     }
 
+    public static function getFeedItems()
+    {
+        return self::latest()->take(20)->get();
+    }
+
     public function toFeedItem(): FeedItem
     {
         return FeedItem::create([
-            'id' => $this->id,
+            'id' => $this->slug,
             'title' => $this->title,
             'summary' => Str::limit(strip_tags($this->body), 150),
             'updated' => $this->updated_at,
-            'link' => route('blog.show', $this->slug),
-            'author' => $this->author->name ?? 'Admin',
+            'link' => route('blog.show', ['slug' => $this->slug]),
+            'author' => $this->author ? $this->author->name : 'MIG Consulting',
         ]);
-    }
-
-    public static function getFeedItems()
-    {
-        return static::latest()->take(20)->get();
     }
 }
