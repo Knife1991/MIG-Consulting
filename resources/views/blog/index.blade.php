@@ -34,7 +34,6 @@
                                     </p>
                                     <p class="card-text flex-grow-1">
                                         {{ Str::limit(strip_tags($post->body), 180, '...') }}
-                                        <span class="text-primary fw-semibold">Leggi di più</span>
                                     </p>
                                 </div>
                             </div>
