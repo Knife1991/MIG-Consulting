@@ -23,13 +23,12 @@
             </div>
             <!-- Colonna 2 -->
             <div class="col-12 col-md-4 mb-4 mt-5 mt-md-0">
-                <div>
+                {{-- <div>
                     <i class="bi bi-telephone-inbound simboli_contatti shadow"></i>
                 </div>
                 <div class="mt-5">
-                    <a href="https://wa.me/3461338998" target="_blank" class="fs-5 link_contatti">Merola Michele (CEO) 3461338998 <br></a>
-                    <a href="https://wa.me/3461338998" target="_blank" class="fs-5 link_contatti">Merola Giuseppe (COO) 3450936597</a>
-                </div>
+                    <a href="https://wa.me/3461338998" target="_blank" class="fs-5 link_contatti">3461338998 <br></a>
+                </div> --}}
             </div>
             <!-- Colonna 3 -->
             <div class="col-12 col-md-4 mb-4 mt-5 mt-md-0">
@@ -37,8 +36,8 @@
                     <i class="bi bi-envelope-at simboli_contatti shadow"></i>
                 </div>
                 <div class="mt-5">
-                    <a href="mailto:merolamichele@mig-consulting.it" class="fs-5 link_contatti">merolamichele@mig-consulting.it</a>
-                    <a href="mailto:merolagiuseppe@mig-consulting.it" class="fs-5 link_contatti">merolagiuseppe@mig-consulting.it</a>
+                    <a href="mailto:merolamichele@mig-consulting.it" class="fs-5 link_contatti">info@mig-consulting.it</a>
+                    <a href="mailto:merolagiuseppe@mig-consulting.it" class="fs-5 link_contatti">amministrazione@mig-consulting.it</a>
                 </div>
             </div>
         </div>
@@ -51,7 +50,7 @@
                             <i class="bi bi-facebook icone_social facebook mx-5"></i>
                         </a>
                         {{-- <a href="">
-                            <img class="instagram" src="{{Storage::url('../../storage/public/img/instagram.png')}}" alt="">
+                            <i class="bi bi-instagram icone_social instagram mx-5"></i>
                         </a> --}}
                         <a target="_blank" href="https://www.linkedin.com/company/mig-consulting-it/">
                             <i class="bi bi-linkedin icone_social linkedin mx-5"></i>
@@ -68,7 +67,7 @@
     </div>
     @endif
     
-    {{-- Form --}}
+    {{-- Form
     <div class="container px-5 my-5">
         <div class="row justify-content-center">
             <div class="col-lg-8">
@@ -118,7 +117,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 </div>
 
 

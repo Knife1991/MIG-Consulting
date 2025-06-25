@@ -320,13 +320,11 @@ header .overlay {
 .icone_social{
   font-size: 60px;
   margin: 0px 15px;
-  filter: drop-shadow(2px 2px 2px grey);
 }
 
 .instagram{
   width: 85px;
   margin-top: 2px;
-  filter: drop-shadow(2px 2px 2px grey);
 }
 
 .icone_footer{
