@@ -38,6 +38,7 @@ Route::post('contatti/submit', [PublicController::class, 'submit'])->name('conta
 Route::get('/blog', [PostController::class, 'index'])->name('blog.index');
 Route::get('/blog/create', [PostController::class, 'create'])->name('blog.create')->middleware('auth');
 Route::post('/blog', [PostController::class, 'store'])->name('blog.store')->middleware('auth');
+Route::get('/blog/archivio', [PostController::class, 'archivio'])->name('blog.archivio');
 Route::get('/blog/{slug}', [PostController::class, 'show'])->name('blog.show');
 Route::get('/dashboard/posts', [PostController::class, 'dashboard'])->name('posts.dashboard')->middleware('auth');
 Route::get('/posts/{post}/edit', [PostController::class, 'edit'])->name('posts.edit')->middleware('auth');

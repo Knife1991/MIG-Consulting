@@ -399,3 +399,29 @@ header .overlay {
   padding: 50px 60px !important;
 }
 
+.link_tutti{
+  color: rgb(116, 127, 135);
+}
+
+.link_tutti:hover{
+  color: #4DAAE9;
+  text-decoration: underline !important;
+}
+
+.col-lg-3 a:hover h6,
+.card:hover h5,
+.card:hover h2,
+.card:hover h3,
+.card:hover h4,
+.card:hover h5 {
+    color: #4DAAE9;
+    text-decoration: underline;
+    transition: color 0.1s ease;
+}
+
+.col-lg-3 a:hover {
+    cursor: pointer;
+}
+
+
+
