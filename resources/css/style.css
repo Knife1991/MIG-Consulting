@@ -400,11 +400,11 @@ header .overlay {
 }
 
 .link_tutti{
-  color: rgb(116, 127, 135);
+  color: rgb(116, 127, 135) !important;
 }
 
 .link_tutti:hover{
-  color: #4DAAE9;
+  color: #4DAAE9 !important;
   text-decoration: underline !important;
 }
 

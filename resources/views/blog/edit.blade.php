@@ -20,9 +20,8 @@
 
                     <div class="mb-4">
                         <label for="body" class="form-label fw-bold">Contenuto dell’articolo</label>
-                        <input id="body" type="hidden" name="body" value="{{ old('body', $post->body ?? '') }}">
-                        <trix-editor input="body"></trix-editor>
-                    </div>                    
+                        <textarea id="body" name="body" class="form-control" rows="10">{{ old('body', $post->body ?? '') }}</textarea>
+                    </div>                                      
 
                     <div class="mb-3">
                         <label for="image" class="form-label fw-bold">Immagine di copertina (opzionale)</label>

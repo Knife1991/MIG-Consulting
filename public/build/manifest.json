@@ -16,17 +16,17 @@
     "src": "public/img/contatti.jpg"
   },
   "resources/css/app.css": {
-    "file": "assets/app-vWMA6xew.css",
+    "file": "assets/app-QOliC-Fo.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-BL35qyNd.js",
+    "file": "assets/app-dXlKCDKW.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
     "css": [
-      "assets/app-CNOBIVUT.css"
+      "assets/app-DVtGi7mc.css"
     ]
   }
 }
