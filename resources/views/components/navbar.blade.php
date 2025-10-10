@@ -37,15 +37,15 @@
           <li class="nav-item">
             <a class="nav-link" href="{{route('consulenza-aziendale')}}">Consulenza Aziendale</a>
           </li>
-          <li class="nav-item">
+          {{-- <li class="nav-item">
             <a class="nav-link" href="{{route('blog.index')}}">Blog</a>
-          </li>
+          </li> --}}
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="{{route('contatti')}}">Contatti</a>
           </li>
 
           <!-- OMINO DESKTOP -->
-          <li class="nav-item ms-3 d-none d-lg-block">
+          {{-- <li class="nav-item ms-3 d-none d-lg-block">
             <div class="dropdown">
               <button class="bottone_persona" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="bi bi-person fs-3"></i>
@@ -70,11 +70,11 @@
                 @endauth
               </ul>
             </div>
-          </li>
+          </li> --}}
         </ul>
 
         <!-- OMINO MOBILE IN BASSO CON DROPDOWN VERSO L'ALTO -->
-        <div class="position-absolute bottom-0 start-0 p-3 d-lg-none">
+        {{-- <div class="position-absolute bottom-0 start-0 p-3 d-lg-none">
           <div class="dropup">
             <button class="bottone_persona" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="bi bi-person fs-3"></i>
@@ -99,7 +99,7 @@
               @endauth
             </ul>
           </div>
-        </div>
+        </div> --}}
       </div>
     </div>
   </div>
